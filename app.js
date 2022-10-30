@@ -1,17 +1,12 @@
+
 // https://avatars.dicebear.com/api/open-peeps/123123.svg?background=%230000ff
+function loadScript(url) {    
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.src = url;
+    head.appendChild(script);
+}
 
-backgroundClr = "3f3f3f"
 
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }   else {
-            entry.target.classList.remove('show');
-        }
-    })
-})
-
-const hidden = document.querySelectorAll(".hidden");
-hidden.forEach((el) => observer.observe(el));
+loadScript('./js/cardStager.js')
+loadScript('./js/observer.js')
