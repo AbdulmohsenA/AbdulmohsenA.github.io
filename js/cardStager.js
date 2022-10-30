@@ -1,6 +1,5 @@
 function cardStager(section, cardSet) {
     cardsContainer = document.getElementById(section).getElementsByClassName("container")[0]
-    console.log(cardsContainer)
     let cards = cardSet
     for (let i = 0; i < cards.length; i++) {
       let card = document.createElement("div")
