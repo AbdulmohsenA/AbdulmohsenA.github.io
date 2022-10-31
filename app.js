@@ -8,4 +8,3 @@ function loadScript(url) {
 
 loadScript('./js/cardStager.js')
 loadScript('./js/observer.js')
-
