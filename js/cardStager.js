@@ -1,16 +1,4 @@
-const languages = [
-  ["Python", "./logos/Python-logo.png"],
-  ["JS", "./logos/JavaScript-logo.png"],
-  ["Java", "./logos/java-logo.png"],
-  ["SQL", "./logos/mysql.png"]]
-
-const sites = [
-  ["CV", "./logos/cv.png", ""],
-  ["Github", "./logos/git.png", "https://github.com/AbdulmohsenA"],
-  ["LinkedIn", "./logos/linin.png", "https://linkedin.com/"]]
-
-
-function cardStager(section, cardSet) {
+ function cardStager(section, cardSet) {
   cardsContainer = document.getElementById(section).getElementsByClassName("container")[0]
   let cards = cardSet
   for (let i = 0; i < cards.length; i++) {
@@ -25,5 +13,11 @@ function cardStager(section, cardSet) {
   }
 }
 
-cardStager("languages", languages)
-cardStager("related", sites)
+fetch("./../data/data.json")
+  .then((response) => response.json())
+  .then((json) => {
+    let languages = json["languages"]
+    let sites     = json["sites"]
+    cardStager("languages", languages)
+    cardStager("related", sites)
+  })

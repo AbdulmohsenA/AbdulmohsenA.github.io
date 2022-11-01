@@ -1,9 +1,8 @@
-@import "scrollbar.css";
+@import "./scrollbar.css";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 :root {
     --alt-color: #f0db4f;
-    /*cursor: none;*/
 }
 
 body {
@@ -21,7 +20,7 @@ img {
 
 h2 {
     text-align: center;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 section {
@@ -34,15 +33,6 @@ section {
 footer {
     text-align: center;
     margin-bottom: 50px;
-}
-
-#cursor {
-    position: fixed;
-    background-color: white;
-    mix-blend-mode: difference;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
 }
 
 .container {
@@ -58,7 +48,7 @@ footer {
     border-radius: 10px;
 }
 
-.spacer {
+.footimg {
     aspect-ratio: 8/1;
     width: 100%;
     background-repeat: no-repeat;

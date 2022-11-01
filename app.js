@@ -7,4 +7,8 @@ function loadScript(url) {
 }
 
 loadScript('./js/cardStager.js')
-loadScript('./js/observer.js')
+
+// Load this only when all elements are loaded
+window.addEventListener('load', () => {
+    loadScript('./js/observer.js')
+}, false);
