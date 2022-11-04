@@ -1,5 +1,5 @@
- function cardStager(section, cardSet) {
-  cardsContainer = document.getElementById(section).getElementsByClassName("container")[0]
+ export function cardStager(section, cardSet) {
+  let cardsContainer = document.getElementById(section).getElementsByClassName("container")[0]
   let cards = cardSet
   for (let i = 0; i < cards.length; i++) {
     let card = document.createElement("div")
@@ -12,12 +12,3 @@
     cardsContainer.appendChild(card)
   }
 }
-
-fetch("./../data/data.json")
-  .then((response) => response.json())
-  .then((json) => {
-    let languages = json["languages"]
-    let sites     = json["sites"]
-    cardStager("languages", languages)
-    cardStager("related", sites)
-  })

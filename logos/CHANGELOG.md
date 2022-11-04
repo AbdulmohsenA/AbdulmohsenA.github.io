@@ -20,13 +20,3 @@
 ### Fixed
 - The logos not loading the first time due to caching errors.
 ---
-
-## [0.11.4] - 2022-11-4
-
-
-### Changed
-- The whole packaging, now using vitejs. Still using vanilla
-
-### Fixed
-- The logos not loading the first time due to caching errors. (Hopefully)
----
