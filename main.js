@@ -24,7 +24,7 @@ document.querySelector('#app').innerHTML = `
 <div class="footimg"></div>
   </div>
 `
-
+sessionStorage.clear()
 
 // https://avatars.dicebear.com/api/open-peeps/123123.svg?background=%230000ff
 
