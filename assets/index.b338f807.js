@@ -18,4 +18,4 @@
 
 <div class="footimg"></div>
   </div>
-`;fetch("./assets/data/data.json").then(s=>s.json()).then(s=>{let n=s.languages,o=s.sites;l("languages",n),l("related",o)});window.onload=s=>{document.querySelectorAll(".hidden").forEach(o=>d.observe(o))};
+`;fetch("./data/data.json").then(s=>s.json()).then(s=>{let n=s.languages,o=s.sites;l("languages",n),l("related",o)});window.onload=s=>{document.querySelectorAll(".hidden").forEach(o=>d.observe(o))};
