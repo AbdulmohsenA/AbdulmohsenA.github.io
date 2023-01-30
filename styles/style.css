@@ -73,3 +73,13 @@ a:hover {
     filter: blur(0);
     transform:translateX(0);
 }
+
+#cursor {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #f0db4f;
+    position: absolute;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}

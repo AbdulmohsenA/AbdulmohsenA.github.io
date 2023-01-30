@@ -2,6 +2,7 @@ import './styles/style.css'
 
 import { cardStager } from "./js/cardStager";
 import { observer } from './js/observer'
+import { displayCursor } from './js/cursor'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -24,7 +25,6 @@ document.querySelector('#app').innerHTML = `
 <div class="footimg"></div>
   </div>
 `
-// https://avatars.dicebear.com/api/open-peeps/123123.svg?background=%230000ff
 
 let languages = [
   ["Python", "./logos/Python-logo.png"],
@@ -35,7 +35,8 @@ let languages = [
 let sites = [
   ["CV", "./logos/cv.png", ""],
   ["Github", "./logos/git.png", "https://github.com/AbdulmohsenA"],
-  ["LinkedIn", "./logos/linin.png", "https://linkedin.com/"]]
+  ["LinkedIn", "./logos/linin.png", "https://linkedin.com/"],
+  ["Kaggle", "./logos/kaggle.png", "https://www.kaggle.com/abdulmohsena/"]]
 
 cardStager("languages", languages)
 cardStager("related", sites)
@@ -44,3 +45,5 @@ window.onload = e => {
   let hidden = document.querySelectorAll(".hidden");
   hidden.forEach((el) => observer.observe(el));
 }
+
+displayCursor();
