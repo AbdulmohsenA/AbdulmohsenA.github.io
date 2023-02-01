@@ -36,7 +36,7 @@ let sites = [
   ["CV", "./logos/cv.png", ""],
   ["Github", "./logos/git.png", "https://github.com/AbdulmohsenA"],
   ["LinkedIn", "./logos/linin.png", "https://linkedin.com/"],
-  ["Kaggle", "./logos/kaggle.png", "https://www.kaggle.com/abdulmohsena/"]]
+  ]
 
 cardStager("languages", languages)
 cardStager("related", sites)
