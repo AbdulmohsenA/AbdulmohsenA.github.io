@@ -26,9 +26,6 @@ jobs:
       - name: Build project
         run: npm run build
         
-      - name: Copy logos
-        run: mkdir ./dist/logos
-        
       - name: Paste logos
         run: cp -r ./logos ./dist/logos
 
