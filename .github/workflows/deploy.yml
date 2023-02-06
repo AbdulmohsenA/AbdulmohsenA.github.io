@@ -25,6 +25,8 @@ jobs:
 
       - name: Build project
         run: npm run build
+        run: mkdir ./dist/logos
+        run: cp -r ./logos ./dist/logos
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
