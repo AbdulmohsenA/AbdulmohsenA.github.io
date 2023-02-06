@@ -25,8 +25,17 @@
 
 
 ### Changed
-- The whole packaging, now using vitejs. Still using vanilla
+- The whole packaging, now using vitejs. Still using vanilla.
 
 ### Fixed
 - The logos not loading the first time due to caching errors. (Hopefully)
+---
+
+## [1.2.6] - 2023-2-6
+
+### Added
+- Projects section to view my other sites.
+
+### Changed
+- Using Workflows to ease deployment.
 ---
