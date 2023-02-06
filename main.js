@@ -10,6 +10,11 @@ document.querySelector('#app').innerHTML = `
   <h1 class = "hidden">Hello, i am Abdulmohsen.</h1>
 </section>
 
+<section id="projects">
+  <h2 class = "hidden">Projects</h2>
+  <div class="container"></div>
+</section>
+
 <section id="languages">
   <h2 class = "hidden">Languages</h2>
   <div class="container"></div>
@@ -26,6 +31,10 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
+let projects = [
+  ["3D Visualiser", "./logos/3dVisualiser.png", "https://abdulmohsena.github.io/Equation3D/"]
+]
+
 let languages = [
   ["Python", "./logos/Python-logo.png"],
   ["JS", "./logos/JavaScript-logo.png"],
@@ -38,6 +47,7 @@ let sites = [
   ["LinkedIn", "./logos/linin.png", "https://linkedin.com/"],
   ]
 
+cardStager("projects", projects)
 cardStager("languages", languages)
 cardStager("related", sites)
 
