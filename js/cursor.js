@@ -1,7 +1,7 @@
 export function displayCursor() {
 
 document.addEventListener('DOMContentLoaded', () => {
-    let mousePosX = 0,
+    let mousePosX = window.innerWidth / 2,
         mousePosY = 0,
         mouseCircle = document.getElementById('cursor');
   
@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     let delay = 12,
-    revisedMousePosX = 0,
-    revisedMousePosY = 0;
+    revisedMousePosX = mousePosX,
+    revisedMousePosY = mousePosY;
   
     function delayMouseFollow() {
         requestAnimationFrame(delayMouseFollow);
