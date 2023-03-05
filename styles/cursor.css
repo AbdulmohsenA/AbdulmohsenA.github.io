@@ -4,7 +4,7 @@
     width: 30px;
     border-radius: 50%;
     background-color: #f0db4f;
-    position: absolute;
+    position: sticky;
     z-index: 1000;
     mix-blend-mode: difference;
 }

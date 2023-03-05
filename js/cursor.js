@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
         mouseCircle = document.getElementById('cursor');
   
     document.onmousemove = (e) => {
-        mousePosX = e.pageX;
-        mousePosY = e.pageY;
+        mousePosX = e.clientX;
+        mousePosY = e.clientY;
     }
   
     let delay = 12,
