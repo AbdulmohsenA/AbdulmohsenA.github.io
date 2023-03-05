@@ -43,5 +43,5 @@
 ## [1.2.8] - 2023-2-8
 
 ### Changed
-- Seperated cursor css from ```styles.css```
+- Seperated cursor CSS from ```styles.css```
 ---
