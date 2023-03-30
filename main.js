@@ -32,7 +32,8 @@ document.querySelector('#app').innerHTML = `
 `
 
 const projects = [
-  ['3D Visualiser', './logos/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/']
+  ['3D Visualiser', './logos/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
+  ['Schedule.it', './logos/scheduleit.png', 'https://scheduleit.up.railway.app/en']
 ]
 
 const languages = [
