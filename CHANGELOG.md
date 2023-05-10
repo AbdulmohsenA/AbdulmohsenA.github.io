@@ -44,4 +44,10 @@
 
 ### Changed
 - Seperated cursor CSS from ```styles.css```
+
+## [1.5.10] - 2023-5-10
+
+### Changed
+- Removed Linked In and CV from related sites.
+- Remove the footer.
 ---

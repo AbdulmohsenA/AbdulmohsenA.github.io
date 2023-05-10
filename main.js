@@ -25,8 +25,6 @@ document.querySelector('#app').innerHTML = `
   <div class='container'></div>
 </section>
 
-<footer>Links to be updated.</footer>
-
 <div class='footimg'></div>
   </div>
 `
@@ -44,9 +42,7 @@ const languages = [
 ]
 
 const sites = [
-  ['CV', './logos/cv.png', ''],
-  ['Github', './logos/git.png', 'https://github.com/AbdulmohsenA'],
-  ['LinkedIn', './logos/linin.png', 'https://linkedin.com/']
+  ['Github', './logos/git.png', 'https://github.com/AbdulmohsenA']
 ]
 
 cardStager('projects', projects)
