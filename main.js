@@ -15,8 +15,8 @@ document.querySelector('#app').innerHTML = `
   <div class='container'></div>
 </section>
 
-<section id='languages'>
-  <h2 class = 'hidden'>Languages</h2>
+<section id='skills'>
+  <h2 class = 'hidden'>Skills</h2>
   <div class='container'></div>
 </section>
 
@@ -34,11 +34,13 @@ const projects = [
   ['Schedule.it', './logos/scheduleit.png', 'https://scheduleit.up.railway.app/en']
 ]
 
-const languages = [
+const skills = [
   ['Python', './logos/Python-logo.png'],
   ['JS', './logos/JavaScript-logo.png'],
   ['Java', './logos/java-logo.png'],
-  ['SQL', './logos/mysql.png']
+  ['SQL', './logos/mysql.png'],
+  ['Docker', './logos/docker.png'],
+  ['Postman', './logos/postman.png']
 ]
 
 const sites = [
@@ -46,7 +48,7 @@ const sites = [
 ]
 
 cardStager('projects', projects)
-cardStager('languages', languages)
+cardStager('skills', skills)
 cardStager('related', sites)
 
 window.onload = e => {
