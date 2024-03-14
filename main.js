@@ -40,7 +40,7 @@ const skills = [
   ['Java', './logos/java-logo.png'],
   ['SQL', './logos/mysql.png'],
   ['Docker', './logos/docker.png'],
-  ['Postman', './logos/postman.png']
+  ['PyTorch', './logos/pytorch.png']
 ]
 
 const sites = [
