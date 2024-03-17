@@ -9,7 +9,9 @@
 body {
     background-color: #252525;
     color: white;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Mirza", serif;
+    font-weight: 400;
+    font-size: x-large;
     padding: 0;
     margin: 0;
 }
@@ -43,6 +45,8 @@ footer {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     float: left;
     margin: 10px;
     background-color: transparent;
@@ -56,6 +60,10 @@ footer {
     background-position: center;
     background-size: cover;
     background-image: url("./../logos/layered-peaks-haikei.svg");
+}
+
+a {
+    transition: 0.25s ease;
 }
 
 a:hover {
@@ -73,4 +81,11 @@ a:hover {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+.name {
+    margin-top: 10%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: large;
+    text-align: center;
 }

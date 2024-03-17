@@ -1,29 +1,30 @@
 export function displayCursor () {
+    const CURSOR_OFFSET = 15;
+    let mousePosX = window.innerWidth / 2;
+    let mousePosY = 0;
+    let mouseCircle = null;
 
     document.addEventListener('DOMContentLoaded', () => {
-        let mousePosX = window.innerWidth / 2
-        let mousePosY = 0
-        let mouseCircle = document.getElementById('cursor')
+        mouseCircle = document.getElementById('cursor');
+        delayMouseFollow();
+    });
 
-        document.onmousemove = (e) => {
-            mousePosX = e.clientX
-            mousePosY = e.clientY
-    }
+    document.onmousemove = (e) => {
+        mousePosX = e.clientX;
+        mousePosY = e.clientY;
+    };
 
-    const delay = 12
-    let revisedMousePosX = mousePosX
-    let revisedMousePosY = mousePosY
-    
+    const delay = 12;
+    let revisedMousePosX = mousePosX;
+    let revisedMousePosY = mousePosY;
+
     function delayMouseFollow() {
-        requestAnimationFrame(delayMouseFollow)
+        requestAnimationFrame(delayMouseFollow);
 
-        revisedMousePosX += (mousePosX - revisedMousePosX) / delay
-        revisedMousePosY += (mousePosY - revisedMousePosY) / delay 
+        revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+        revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
 
-        mouseCircle.style.top = revisedMousePosY - (15) + 'px'
-        mouseCircle.style.left = revisedMousePosX - (15) + 'px'
+        mouseCircle.style.top = `${revisedMousePosY - CURSOR_OFFSET}px`;
+        mouseCircle.style.left = `${revisedMousePosX - CURSOR_OFFSET}px`;
     }
-    
-    delayMouseFollow()
-    })
 }

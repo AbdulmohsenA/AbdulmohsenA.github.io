@@ -7,21 +7,21 @@ import { displayCursor } from './js/cursor'
 document.querySelector('#app').innerHTML = `
   <div>
   <section>
-  <h1 class = 'hidden'>Hello, i am Abdulmohsen.</h1>
+  <h1 class = 'hidden'>أهلا، انا عبدالمحسن</h1>
 </section>
 
 <section id='projects'>
-  <h2 class = 'hidden'>Projects</h2>
+  <h2 class = 'hidden'>المشاريع</h2>
   <div class='container'></div>
 </section>
 
 <section id='skills'>
-  <h2 class = 'hidden'>Skills</h2>
+  <h2 class = 'hidden'>المهارات</h2>
   <div class='container'></div>
 </section>
 
 <section id='related'>
-  <h2 class='hidden'>Related sites</h2>
+  <h2 class='hidden'>مواقع ذات صلة</h2>
   <div class='container'></div>
 </section>
 
@@ -44,7 +44,9 @@ const skills = [
 ]
 
 const sites = [
-  ['Github', './logos/git.png', 'https://github.com/AbdulmohsenA']
+  ['Github', './logos/github.png', 'https://github.com/AbdulmohsenA'],
+  ['LinkedIn', './logos/linkedin.png', 'https://www.linkedin.com/in/abdulmohsen-abanmy/'],
+  ['Kaggle', './logos/kaggle.png', 'https://www.kaggle.com/abdulmohsena']
 ]
 
 cardStager('projects', projects)
