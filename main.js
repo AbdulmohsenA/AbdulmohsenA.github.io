@@ -6,22 +6,22 @@ import { displayCursor } from './js/cursor'
 
 document.querySelector('#app').innerHTML = `
   <div>
-  <section>
-  <h1 class = 'hidden'>أهلا، انا عبدالمحسن</h1>
+<section>
+  <h1 class = 'hidden'>✋ أهلا، انا عبدالمحسن</h1>
 </section>
 
 <section id='projects'>
-  <h2 class = 'hidden'>المشاريع</h2>
+  <h2 class = 'hidden' data='🛠️'>المشاريع</h2>
   <div class='container'></div>
 </section>
 
 <section id='skills'>
-  <h2 class = 'hidden'>المهارات</h2>
+  <h2 class = 'hidden' data='💻'>المهارات</h2>
   <div class='container'></div>
 </section>
 
 <section id='related'>
-  <h2 class='hidden'>مواقع ذات صلة</h2>
+  <h2 class='hidden' data='🔗'>مواقع ذات صلة</h2>
   <div class='container'></div>
 </section>
 
@@ -36,7 +36,7 @@ const projects = [
 
 const skills = [
   ['Python', './logos/Python-logo.png'],
-  ['JS', './logos/JavaScript-logo.png'],
+  ['JavaSript', './logos/JavaScript-logo.png'],
   ['Java', './logos/java-logo.png'],
   ['SQL', './logos/mysql.png'],
   ['Docker', './logos/docker.png'],

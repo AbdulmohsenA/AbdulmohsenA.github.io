@@ -7,11 +7,7 @@ export function cardStager(section, cardSet) {
       ? `<a href="${cardInfo[2]}" target="_blank"><img src="${cardInfo[1]}"></a>`
       : `<img src="${cardInfo[1]}">`;
     card.style.transitionDelay = `${200 * (index + 1)}ms`;
-
-    const name = document.createElement('span');
-    name.className = 'name hidden';
-    name.textContent = cardInfo[0];
-    card.appendChild(name)
+    card.setAttribute("data", cardInfo[0])
 
     cardsContainer.appendChild(card);
   });

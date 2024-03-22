@@ -1,15 +1,11 @@
-
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: var(--alt-color);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }

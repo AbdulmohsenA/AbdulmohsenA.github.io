@@ -1,10 +1,32 @@
+
 #cursor {
+    opacity: 0;
     pointer-events: none;
     height: 30px;
     width: 30px;
-    border-radius: 50%;
-    background-color: #f0db4f;
-    position: sticky;
+    border-radius: 30px;
+    background-color: var(--alt-color);
+    position: fixed;
     z-index: 1000;
-    mix-blend-mode: difference;
+    
+    transition: opacity 400ms ease;
+    display: grid;
+    place-items: center;
+}
+
+body:hover > #cursor {
+    opacity: 1;
+}
+
+#cursor > p {
+    font-size: 7px;
+    font-weight: 400;
+    color: var(--alt-color);
+    font-family: 'Noto Sans';
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+
+#cursor > p > i {
+    color: var(--main-color);
 }

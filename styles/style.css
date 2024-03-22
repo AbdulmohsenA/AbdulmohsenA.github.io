@@ -1,13 +1,16 @@
 @import url("./scrollbar.css");
 @import url("./cursor.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap');
+
 
 :root {
-    --alt-color: #f0db4f;
+    --main-color: rgb(50, 52, 55);
+    --alt-color: rgb(226, 183, 20);
 }
 
 body {
-    background-color: #252525;
+    background-color: var(--main-color);
     color: white;
     font-family: "Mirza", serif;
     font-weight: 400;
@@ -22,8 +25,9 @@ img {
 }
 
 h2 {
+    z-index: 1000;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 section {
