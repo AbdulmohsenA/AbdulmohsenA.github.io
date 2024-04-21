@@ -7,16 +7,21 @@ import { displayCursor } from './js/cursor'
 document.querySelector('#app').innerHTML = `
   <div>
 <section>
-  <h1 class = 'hidden'>✋ أهلا، انا عبدالمحسن</h1>
+  <h1 class = 'hidden' data='✋'>أهلا، انا عبدالمحسن</h1>
 </section>
 
 <section id='projects'>
-  <h2 class = 'hidden' data='🛠️'>المشاريع</h2>
+  <h2 class = 'hidden' data='🏗️'>المشاريع</h2>
   <div class='container'></div>
 </section>
 
 <section id='skills'>
   <h2 class = 'hidden' data='💻'>المهارات</h2>
+  <div class='container'></div>
+</section>
+
+<section id='tools'>
+  <h2 class = 'hidden' data='🛠️'>الأدوات</h2>
   <div class='container'></div>
 </section>
 
@@ -40,7 +45,14 @@ const skills = [
   ['Java', './logos/java-logo.png'],
   ['SQL', './logos/mysql.png'],
   ['Docker', './logos/docker.png'],
-  ['PyTorch', './logos/pytorch.png']
+]
+
+const tools = [
+  ['LangChain', './logos/langchain.png'],
+  ['PyTorch', './logos/pytorch.png'],
+  ['THREE.JS', './logos/threejs.png'],
+  ['HuggingFace', './logos/huggingface.png'],
+  ['Git', './logos/git.png']
 ]
 
 const sites = [
@@ -51,6 +63,7 @@ const sites = [
 
 cardStager('projects', projects)
 cardStager('skills', skills)
+cardStager('tools', tools)
 cardStager('related', sites)
 
 window.onload = e => {
