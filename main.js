@@ -52,7 +52,8 @@ const tools = [
   ['PyTorch', './logos/pytorch.png'],
   ['THREE.JS', './logos/threejs.png'],
   ['HuggingFace', './logos/huggingface.png'],
-  ['Git', './logos/git.png']
+  ['Git', './logos/git.png'],
+  ['Octoparse', './logos/octoparse.png']
 ]
 
 const sites = [
