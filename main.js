@@ -7,7 +7,7 @@ import { displayCursor } from './js/cursor'
 document.querySelector('#app').innerHTML = `
   <div>
 <section>
-  <h1 class = 'hidden' data='✋'>أهلا، انا عبدالمحسن</h1>
+  <h2 class = 'hidden' data='✋'>أهلا، انا عبدالمحسن</h2>
 </section>
 
 <section id='projects'>
