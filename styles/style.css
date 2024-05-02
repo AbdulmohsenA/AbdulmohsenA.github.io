@@ -1,6 +1,6 @@
 @import url("./scrollbar.css");
 @import url("./cursor.css");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap');
 
 
@@ -12,7 +12,7 @@
 body {
     background-color: var(--main-color);
     color: white;
-    font-family: "Mirza", serif;
+    font-family: "Rubik", "Mirza";
     font-weight: 400;
     font-size: x-large;
     padding: 0;

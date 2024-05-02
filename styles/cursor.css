@@ -8,10 +8,10 @@
     background-color: var(--alt-color);
     position: fixed;
     z-index: 1000;
-    
     transition: opacity 400ms ease;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body:hover > #cursor {
@@ -22,11 +22,11 @@ body:hover > #cursor {
     font-size: 7px;
     font-weight: 400;
     color: var(--alt-color);
-    font-family: 'Noto Sans';
     opacity: 0;
     transition: opacity 400ms ease;
+    white-space: nowrap;
 }
 
 #cursor > p > i {
-    color: var(--main-color);
+    color: var(--alt-color);
 }

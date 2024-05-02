@@ -1,5 +1,6 @@
 export function cardStager(section, cardSet) {
-  const cardsContainer = document.getElementById(section).getElementsByClassName('container')[0];
+  const cardsContainer = document.querySelector(`#${section} .container`);
+  
   cardSet.forEach((cardInfo, index) => {
     const card = document.createElement('div');
     card.className = 'card hidden';

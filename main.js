@@ -20,11 +20,6 @@ document.querySelector('#app').innerHTML = `
   <div class='container'></div>
 </section>
 
-<section id='tools'>
-  <h2 class = 'hidden' data='🛠️'>الأدوات</h2>
-  <div class='container'></div>
-</section>
-
 <section id='related'>
   <h2 class='hidden' data='🔗'>مواقع ذات صلة</h2>
   <div class='container'></div>
@@ -36,25 +31,24 @@ document.querySelector('#app').innerHTML = `
 
 const projects = [
   ['3D Visualiser', './logos/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
-  ['Schedule.it', './logos/scheduleit.png', 'https://scheduleit.up.railway.app/en']
+  ['Schedule.it', './logos/scheduleit.png', 'https://scheduleit.up.railway.app/en'],
+  ['WikiProduct', './logos/WikiProduct.png', 'https://wikiproduct.up.railway.app']
 ]
 
 const skills = [
   ['Python', './logos/Python-logo.png'],
   ['JavaSript', './logos/JavaScript-logo.png'],
-  ['Java', './logos/java-logo.png'],
-  ['SQL', './logos/mysql.png'],
+  ['Java', './logos/java.png'],
+  ['SQL', './logos/PostgresQL.png'],
+  ['Chroma DB', './logos/chromadb.png'],
+  ['PyTorch', './logos/pytorch.png'],
+  ['Hugging Face', './logos/huggingface.png'],
+  ['LangChain', './logos/langchain.png'],
+  ['Git', './logos/git.png'],
   ['Docker', './logos/docker.png'],
+  ['Django', './logos/Django.png'],
 ]
 
-const tools = [
-  ['LangChain', './logos/langchain.png'],
-  ['PyTorch', './logos/pytorch.png'],
-  ['THREE.JS', './logos/threejs.png'],
-  ['HuggingFace', './logos/huggingface.png'],
-  ['Git', './logos/git.png'],
-  ['Octoparse', './logos/octoparse.png']
-]
 
 const sites = [
   ['Github', './logos/github.png', 'https://github.com/AbdulmohsenA'],
@@ -64,7 +58,6 @@ const sites = [
 
 cardStager('projects', projects)
 cardStager('skills', skills)
-cardStager('tools', tools)
 cardStager('related', sites)
 
 window.onload = e => {
