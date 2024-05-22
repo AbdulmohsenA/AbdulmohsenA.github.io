@@ -3,25 +3,28 @@ import './styles/style.css'
 import { cardStager } from './js/cardStager'
 import { observer } from './js/observer'
 import { displayCursor } from './js/cursor'
+//import { init } from './js/globe'
 
 document.querySelector('#app').innerHTML = `
   <div>
 <section>
-  <h2 class = 'hidden' data='✋'>أهلا، انا عبدالمحسن</h2>
+  <h2 class = 'hidden' data='✋'>Hello, I'm Abdulmohsen</h2>
+  <div id='current'></div>
+  <canvas class = 'hidden' id="globe"></canvas>
 </section>
 
 <section id='projects'>
-  <h2 class = 'hidden' data='🏗️'>المشاريع</h2>
+  <h2 class = 'hidden' data='🏗️'>Projects</h2>
   <div class='container'></div>
 </section>
 
 <section id='skills'>
-  <h2 class = 'hidden' data='💻'>المهارات</h2>
+  <h2 class = 'hidden' data='💻'>Skills</h2>
   <div class='container'></div>
 </section>
 
 <section id='related'>
-  <h2 class='hidden' data='🔗'>مواقع ذات صلة</h2>
+  <h2 class='hidden' data='🔗'>Related Sites</h2>
   <div class='container'></div>
 </section>
 
@@ -60,9 +63,15 @@ cardStager('projects', projects)
 cardStager('skills', skills)
 cardStager('related', sites)
 
-window.onload = e => {
+window.onload = async e => {
   let hidden = document.querySelectorAll('.hidden')
   hidden.forEach((el) => observer.observe(el))
+
+  const { init } = await import('./js/globe.js');
+
+  displayCursor()
+  init()
 }
 
-displayCursor()
+
+
