@@ -3,14 +3,12 @@ import './styles/style.css'
 import { cardStager } from './js/cardStager'
 import { observer } from './js/observer'
 import { displayCursor } from './js/cursor'
-//import { init } from './js/globe'
+import { init } from './js/globe'
 
 document.querySelector('#app').innerHTML = `
   <div>
 <section>
   <h2 class = 'hidden' data='✋'>Hello, I'm Abdulmohsen</h2>
-  <div id='current'></div>
-  <canvas class = 'hidden' id="globe"></canvas>
 </section>
 
 <section id='projects'>
@@ -63,14 +61,20 @@ cardStager('projects', projects)
 cardStager('skills', skills)
 cardStager('related', sites)
 
+displayCursor()
+init()
+
+
 window.onload = async e => {
   let hidden = document.querySelectorAll('.hidden')
   hidden.forEach((el) => observer.observe(el))
 
-  const { init } = await import('./js/globe.js');
 
-  displayCursor()
-  init()
+  // Preloading the globe and inserting it to the correct section
+  let header = document.querySelector('section')
+
+  header.appendChild(document.querySelector('#countryLabel'))
+  header.appendChild(document.querySelector('#globe'))
 }
 
 

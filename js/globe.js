@@ -6,7 +6,7 @@ const config = {
   colors: {
       water: '#111',
       land: '#424447',
-      country: '#E2B714',
+      saudiArabia: '#E2B714',
       hover: '#ccc'
   }
 };
@@ -22,7 +22,7 @@ const state = {
 };
 
 const elements = {
-  current: d3.select('#current'),
+  countryLabel: d3.select('#countryLabel'),
   canvas: d3.select('#globe'),
   context: d3.select('#globe').node().getContext('2d')
 };
@@ -94,12 +94,12 @@ const render = () => {
   fill(land, config.colors.land);
 
   if (state.saudiArabia) {
-      elements.current.style('color', config.colors.country)
-      fill(state.saudiArabia, config.colors.country);
+      elements.countryLabel.style('color', config.colors.saudiArabia)
+      fill(state.saudiArabia, config.colors.saudiArabia);
   }
 
   if (state.currentCountry && state.currentCountry !== state.saudiArabia) {
-      elements.current.style('color', 'white')
+      elements.countryLabel.style('color', 'white')
       fill(state.currentCountry, config.colors.hover);
   }
 };
@@ -160,11 +160,11 @@ const mousemove = (event) => {
 
 const enter = (country) => {
   const name = countryList.find((c) => parseInt(c.id) === parseInt(country.id))?.name || '';
-  elements.current.text(name);
+  elements.countryLabel.text(name);
 };
 
 const leave = (country) => {
-  elements.current.text('');
+  elements.countryLabel.text('');
 };
 
 export const init = () => {
