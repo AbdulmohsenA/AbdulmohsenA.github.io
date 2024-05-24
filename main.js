@@ -17,7 +17,12 @@ document.querySelector('#app').innerHTML = `
 </section>
 
 <section id='skills'>
-  <h2 class = 'hidden' data='💻'>Skills</h2>
+  <h2 class = 'hidden' data='💡'>Skills</h2>
+  <div class='container'></div>
+</section>
+
+<section id='tools'>
+  <h2 class = 'hidden' data='🔨'>Tools</h2>
   <div class='container'></div>
 </section>
 
@@ -41,15 +46,18 @@ const skills = [
   ['JavaSript', './logos/JavaScript-logo.png'],
   ['Java', './logos/java.png'],
   ['SQL', './logos/PostgresQL.png'],
+  ['Git', './logos/git.png'],
+  ['Docker', './logos/docker.png'],
+]
+
+const tools = [
+  ['Django', './logos/Django.png'],
   ['Chroma DB', './logos/chromadb.png'],
   ['PyTorch', './logos/pytorch.png'],
   ['Hugging Face', './logos/huggingface.png'],
   ['LangChain', './logos/langchain.png'],
-  ['Git', './logos/git.png'],
-  ['Docker', './logos/docker.png'],
-  ['Django', './logos/Django.png'],
+  ['Weights & Biases', './logos/wandb.png']
 ]
-
 
 const sites = [
   ['Github', './logos/github.png', 'https://github.com/AbdulmohsenA'],
@@ -59,6 +67,7 @@ const sites = [
 
 cardStager('projects', projects)
 cardStager('skills', skills)
+cardStager('tools', tools)
 cardStager('related', sites)
 
 displayCursor()
