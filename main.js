@@ -61,8 +61,7 @@ const tools = [
 
 const sites = [
   ['Github', './logos/github.png', 'https://github.com/AbdulmohsenA'],
-  ['LinkedIn', './logos/linkedin.png', 'https://www.linkedin.com/in/abdulmohsen-abanmy/'],
-  ['Kaggle', './logos/kaggle.png', 'https://www.kaggle.com/abdulmohsena']
+  ['LinkedIn', './logos/linkedin.png', 'https://www.linkedin.com/in/abdulmohsen-abanmy/']
 ]
 
 cardStager('projects', projects)
