@@ -72,7 +72,7 @@ a {
     transition: 0.25s ease;
 }
 
-a:hover {
+img:hover {
     filter: brightness(1.5);
 }
 
