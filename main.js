@@ -36,32 +36,32 @@ document.querySelector('#app').innerHTML = `
 `
 
 const projects = [
-  ['3D Visualiser', './logos/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
-  ['Schedule.it', './logos/scheduleit.png', 'https://scheduleit.up.railway.app/en'],
-  ['WikiProduct', './logos/WikiProduct.png', 'https://wikiproduct.up.railway.app']
+  ['3D Visualiser', './assets/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
+  ['Schedule.it', './assets/scheduleit.png', 'https://scheduleit.up.railway.app/en'],
+  ['WikiProduct', './assets/WikiProduct.png', 'https://wikiproduct.up.railway.app']
 ]
 
 const skills = [
-  ['Python', './logos/Python-logo.png'],
-  ['JavaSript', './logos/JavaScript-logo.png'],
-  ['Java', './logos/java.png'],
-  ['SQL', './logos/PostgresQL.png'],
-  ['Git', './logos/git.png'],
-  ['Docker', './logos/docker.png'],
+  ['Python', './assets/Python-logo.png'],
+  ['JavaSript', './assets/JavaScript-logo.png'],
+  ['Java', './assets/java.png'],
+  ['SQL', './assets/PostgresQL.png'],
+  ['Git', './assets/git.png'],
+  ['Docker', './assets/docker.png'],
 ]
 
 const tools = [
-  ['Django', './logos/Django.png'],
-  ['Chroma DB', './logos/chromadb.png'],
-  ['PyTorch', './logos/pytorch.png'],
-  ['Hugging Face', './logos/huggingface.png'],
-  ['LangChain', './logos/langchain.png'],
-  ['Weights & Biases', './logos/wandb.png']
+  ['Django', './assets/Django.png'],
+  ['Chroma DB', './assets/chromadb.png'],
+  ['PyTorch', './assets/pytorch.png'],
+  ['Hugging Face', './assets/huggingface.png'],
+  ['LangChain', './assets/langchain.png'],
+  ['Weights & Biases', './assets/wandb.png']
 ]
 
 const sites = [
-  ['Github', './logos/github.png', 'https://github.com/AbdulmohsenA'],
-  ['LinkedIn', './logos/linkedin.png', 'https://www.linkedin.com/in/abdulmohsen-abanmy/']
+  ['Github', './assets/github.png', 'https://github.com/AbdulmohsenA'],
+  ['LinkedIn', './assets/linkedin.png', 'https://www.linkedin.com/in/abdulmohsen-abanmy/']
 ]
 
 cardStager('projects', projects)
