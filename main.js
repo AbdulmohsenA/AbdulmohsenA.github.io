@@ -33,7 +33,7 @@ document.querySelector('#app').innerHTML = `
 
 <section id='related'>
   <h2 class='hidden' data='🔗'>QR Code</h2>
-  <div class='container'><img src="/assets/CVQR.png" alt="QR Code" style="width: 40%; max-width: 40%; height:auto; display: block; margin-left: auto; margin-right: auto;"></div>
+  <div class='container'><img src="/asset_files/CVQR.png" alt="QR Code" style="width: 40%; max-width: 40%; height:auto; display: block; margin-left: auto; margin-right: auto;"></div>
 </section>
 
 <div class='footimg'></div>
@@ -41,32 +41,32 @@ document.querySelector('#app').innerHTML = `
 `
 
 const projects = [
-  ['3D Visualiser', './assets/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
-  ['Schedule.it', './assets/scheduleit.png', 'https://scheduleit.up.railway.app/en'],
-  ['WikiProduct', './assets/WikiProduct.png', 'https://wikiproduct.up.railway.app']
+  ['3D Visualiser', './asset_files/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
+  ['Schedule.it', './asset_files/scheduleit.png', 'https://scheduleit.up.railway.app/en'],
+  ['WikiProduct', './asset_files/WikiProduct.png', 'https://wikiproduct.up.railway.app']
 ]
 
 const skills = [
-  ['Python', './assets/Python-logo.png'],
-  ['JavaSript', './assets/JavaScript-logo.png'],
-  ['Java', './assets/java.png'],
-  ['SQL', './assets/PostgresQL.png'],
-  ['Git', './assets/git.png'],
-  ['Docker', './assets/docker.png'],
+  ['Python', './asset_files/Python-logo.png'],
+  ['JavaSript', './asset_files/JavaScript-logo.png'],
+  ['Java', './asset_files/java.png'],
+  ['SQL', './asset_files/PostgresQL.png'],
+  ['Git', './asset_files/git.png'],
+  ['Docker', './asset_files/docker.png'],
 ]
 
 const tools = [
-  ['Django', './assets/Django.png'],
-  ['Chroma DB', './assets/chromadb.png'],
-  ['PyTorch', './assets/pytorch.png'],
-  ['Hugging Face', './assets/huggingface.png'],
-  ['LangChain', './assets/langchain.png'],
-  ['Weights & Biases', './assets/wandb.png']
+  ['Django', './asset_files/Django.png'],
+  ['Chroma DB', './asset_files/chromadb.png'],
+  ['PyTorch', './asset_files/pytorch.png'],
+  ['Hugging Face', './asset_files/huggingface.png'],
+  ['LangChain', './asset_files/langchain.png'],
+  ['Weights & Biases', './asset_files/wandb.png']
 ]
 
 const sites = [
-  ['Github', './assets/github.png', 'https://github.com/AbdulmohsenA'],
-  ['LinkedIn', './assets/linkedin.png', 'https://www.linkedin.com/in/abdulmohsen-abanmy/']
+  ['Github', './asset_files/github.png', 'https://github.com/AbdulmohsenA'],
+  ['LinkedIn', './asset_files/linkedin.png', 'https://www.linkedin.com/in/abdulmohsen-abanmy/']
 ]
 
 cardStager('projects', projects)
