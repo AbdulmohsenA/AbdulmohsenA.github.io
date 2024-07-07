@@ -26,8 +26,8 @@ jobs:
       - name: Build project
         run: npm run build
         
-      - name: Paste logos
-        run: cp -r ./logos ./dist/logos
+      - name: Paste assets
+        run: cp -r ./assets ./dist/assets
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
