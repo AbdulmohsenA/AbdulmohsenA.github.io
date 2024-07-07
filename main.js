@@ -31,10 +31,10 @@ document.querySelector('#app').innerHTML = `
   <div class='container'></div>
 </section>
 
-<section id='related'>
+<section id='CV'>
   <h2 class='hidden' data='🔳'>CV</h2>
   <div class='container'>
-  <a href="https://abdulmohsena.github.io/asset_files/CV.pdf" target="_blank>
+  <a href="https://abdulmohsena.github.io/asset_files/CV.pdf" target="_blank">
   <img src="./asset_files/CVQR.png" alt="QR Code" style="width: 40%; max-width: 40%; height:auto; display: block; margin-left: auto; margin-right: auto;" class='hidden'>
   </a>
   </div>
@@ -77,7 +77,6 @@ cardStager('projects', projects)
 cardStager('skills', skills)
 cardStager('tools', tools)
 cardStager('related', sites)
-
 displayCursor()
 init()
 
