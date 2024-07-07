@@ -31,6 +31,11 @@ document.querySelector('#app').innerHTML = `
   <div class='container'></div>
 </section>
 
+<section id='related'>
+  <h2 class='hidden' data='🔗'>QR Code</h2>
+  <div class='container'><img src="/assets/CVQR.png" alt="QR Code" style="width: 40%; max-width: 40%; height:auto; display: block; margin-left: auto; margin-right: auto;"></div>
+</section>
+
 <div class='footimg'></div>
   </div>
 `
