@@ -27,7 +27,7 @@ jobs:
         run: npm run build
         
       - name: Paste assets
-        run: cp -r ./assets ./dist/assets
+        run: cp -r ./asset_files ./dist/asset_files
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
