@@ -26,7 +26,7 @@
 
 <section id='related'>
   <h2 class='hidden' data='\u{1F517}'>QR Code</h2>
-  <div class='container'><img src="/asset_files/CVQR.png" alt="QR Code" style="width: 40%; max-width: 40%; height:auto; display: block; margin-left: auto; margin-right: auto;"></div>
+  <div class='container'><img src="./asset_files/CVQR.png" alt="QR Code" style="width: 40%; max-width: 40%; height:auto; display: block; margin-left: auto; margin-right: auto;"></div>
 </section>
 
 <div class='footimg'></div>
