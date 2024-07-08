@@ -24,10 +24,10 @@
   <div class='container'></div>
 </section>
 
-<section id='related'>
+<section id='CV'>
   <h2 class='hidden' data='\u{1F533}'>CV</h2>
   <div class='container'>
-  <a href="https://abdulmohsena.github.io/asset_files/CV.pdf" target="_blank>
+  <a href="https://abdulmohsena.github.io/asset_files/CV.pdf" target="_blank">
   <img src="./asset_files/CVQR.png" alt="QR Code" style="width: 40%; max-width: 40%; height:auto; display: block; margin-left: auto; margin-right: auto;" class='hidden'>
   </a>
   </div>
@@ -35,4 +35,4 @@
 
 <div class='footimg'></div>
   </div>
-`;const W=[["3D Visualiser","./asset_files/3dVisualiser.png","https://abdulmohsena.github.io/Equation3D/"],["Schedule.it","./asset_files/scheduleit.png","https://scheduleit.up.railway.app/en"],["WikiProduct","./asset_files/WikiProduct.png","https://wikiproduct.up.railway.app"]],F=[["Python","./asset_files/Python-logo.png"],["JavaSript","./asset_files/JavaScript-logo.png"],["Java","./asset_files/java.png"],["SQL","./asset_files/PostgresQL.png"],["Git","./asset_files/git.png"],["Docker","./asset_files/docker.png"]],N=[["Django","./asset_files/Django.png"],["Chroma DB","./asset_files/chromadb.png"],["PyTorch","./asset_files/pytorch.png"],["Hugging Face","./asset_files/huggingface.png"],["LangChain","./asset_files/langchain.png"],["Weights & Biases","./asset_files/wandb.png"]],R=[["Github","./asset_files/github.png","https://github.com/AbdulmohsenA"],["LinkedIn","./asset_files/linkedin.png","https://www.linkedin.com/in/abdulmohsen-abanmy/"]];m("projects",W);m("skills",F);m("tools",N);m("related",R);S();O();window.onload=async t=>{document.querySelectorAll(".hidden").forEach(s=>x.observe(s));let o=document.querySelector("section");o.appendChild(document.querySelector("#countryLabel")),o.appendChild(document.querySelector("#globe"))};
+`;const V=[["3D Visualiser","./asset_files/3dVisualiser.png","https://abdulmohsena.github.io/Equation3D/"],["Schedule.it","./asset_files/scheduleit.png","https://scheduleit.up.railway.app/en"],["WikiProduct","./asset_files/WikiProduct.png","https://wikiproduct.up.railway.app"]],W=[["Python","./asset_files/Python-logo.png"],["JavaSript","./asset_files/JavaScript-logo.png"],["Java","./asset_files/java.png"],["SQL","./asset_files/PostgresQL.png"],["Git","./asset_files/git.png"],["Docker","./asset_files/docker.png"]],F=[["Django","./asset_files/Django.png"],["Chroma DB","./asset_files/chromadb.png"],["PyTorch","./asset_files/pytorch.png"],["Hugging Face","./asset_files/huggingface.png"],["LangChain","./asset_files/langchain.png"],["Weights & Biases","./asset_files/wandb.png"]],N=[["Github","./asset_files/github.png","https://github.com/AbdulmohsenA"],["LinkedIn","./asset_files/linkedin.png","https://www.linkedin.com/in/abdulmohsen-abanmy/"]];m("projects",V);m("skills",W);m("tools",F);m("related",N);S();O();window.onload=async t=>{document.querySelectorAll(".hidden").forEach(s=>x.observe(s));let o=document.querySelector("section");o.appendChild(document.querySelector("#countryLabel")),o.appendChild(document.querySelector("#globe"))};
