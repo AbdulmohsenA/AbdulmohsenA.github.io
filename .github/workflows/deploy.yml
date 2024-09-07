@@ -29,6 +29,9 @@ jobs:
       - name: Paste assets
         run: cp -r ./asset_files ./dist/asset_files
 
+      - name: Create CNAME file
+        run: echo "abdulmohsen.info" > ./dist/CNAME
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
