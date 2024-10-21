@@ -31,29 +31,41 @@ document.querySelector('#app').innerHTML = `
   <div class='container'></div>
 </section>
 
+<section id='CV'>
+  <h2 class='hidden' data='🔳'>CV</h2>
+  <div class='container'>
+  <a href="https://abdulmohsena.github.io/asset_files/CV.pdf" target="_blank">
+  <img src="./asset_files/CVQR.png" alt="QR Code" style="width: 40%; max-width: 40%; height:auto; display: block; margin-left: auto; margin-right: auto;" class='hidden'>
+  </a>
+  </div>
+</section>
 
-<div class='footimg'></div>
+<div class='footimg'>
+
   </div>
 `
 
 const projects = [
   ['3D Visualiser', './asset_files/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
   ['Schedule.it', './asset_files/scheduleit.png', 'https://scheduleit.up.railway.app/en'],
-  ['WikiProduct', './asset_files/WikiProduct.png', 'https://wikiproduct.up.railway.app']
+  ['WikiProduct', './asset_files/WikiProduct.png', 'https://wikiproduct.up.railway.app'],
+  ['Faseeh Translator', './asset_files/Baleegh.png', 'https://huggingface.co/Abdulmohsena/Faseeh']
 ]
 
 const skills = [
   ['Python', './asset_files/Python-logo.png'],
   ['JavaSript', './asset_files/JavaScript-logo.png'],
   ['Java', './asset_files/java.png'],
-  ['SQL', './asset_files/PostgresQL.png'],
+  ['Databases', './asset_files/PostgresQL.png'],
   ['Git', './asset_files/git.png'],
   ['Docker', './asset_files/docker.png'],
+  ['Cloud', './asset_files/aws.png']
 ]
 
 const tools = [
   ['Django', './asset_files/Django.png'],
   ['Chroma DB', './asset_files/chromadb.png'],
+  ['Elastic', './asset_files/elastic.png'],
   ['PyTorch', './asset_files/pytorch.png'],
   ['Hugging Face', './asset_files/huggingface.png'],
   ['LangChain', './asset_files/langchain.png'],
@@ -72,7 +84,7 @@ cardStager('related', sites)
 displayCursor()
 init()
 
-
+// Load observer for images
 window.onload = async e => {
   let hidden = document.querySelectorAll('.hidden')
   hidden.forEach((el) => observer.observe(el))
@@ -84,6 +96,3 @@ window.onload = async e => {
   header.appendChild(document.querySelector('#countryLabel'))
   header.appendChild(document.querySelector('#globe'))
 }
-
-
-

@@ -65,7 +65,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("./../logos/layered-peaks-haikei.svg");
+    background-image: url("./asset_files/layered-peaks-haikei.svg");
 }
 
 a {
