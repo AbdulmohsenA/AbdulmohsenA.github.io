@@ -15,24 +15,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Install ImageMagick
-        run: sudo apt-get install -y imagemagick
-
-      - name: Resize square images to 512x512
-        run: |
-          find . -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' | while read img; do
-            dimensions=$(identify -format "%wx%h" "$img")
-            width=$(echo $dimensions | cut -d'x' -f1)
-            height=$(echo $dimensions | cut -d'x' -f2)
-
-            if [ "$width" -eq "$height" ]; then
-              convert "$img" -resize 512x512\! "$img"
-              echo "Resized square image: $img"
-            else
-              echo "Ignored non-square image: $img"
-            fi
-          done
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
