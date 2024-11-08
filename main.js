@@ -49,7 +49,7 @@ const projects = [
   ['3D Visualiser', './asset_files/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
   ['Schedule.it', './asset_files/scheduleit.png', 'https://scheduleit.up.railway.app/en'],
   ['WikiProduct', './asset_files/WikiProduct.png', 'https://wikiproduct.up.railway.app'],
-  ['Faseeh Translator', './asset_files/Baleegh.png', 'https://huggingface.co/Abdulmohsena/Faseeh']
+  ['Faseeh Translator', './asset_files/Baleegh.png', 'https://baleegh-production.up.railway.app/']
 ]
 
 const skills = [
