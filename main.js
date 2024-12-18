@@ -70,6 +70,7 @@ const tools = [
   ['Hugging Face', './asset_files/huggingface.png'],
   ['LangChain', './asset_files/langchain.png'],
   ['Weights & Biases', './asset_files/wandb.png']
+  ['Apache Kafka', './asset_files/kafka.png']
 ]
 
 const sites = [
