@@ -1,0 +1,9 @@
+#globe {
+    cursor: move;
+}
+
+#countryLabel {
+    text-align: center;
+    height: 10px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,32 @@
+
+#cursor {
+    opacity: 0;
+    pointer-events: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: var(--alt-color);
+    position: fixed;
+    z-index: 1000;
+    transition: opacity 400ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:hover > #cursor {
+    opacity: 1;
+}
+
+#cursor > p {
+    font-size: 7px;
+    font-weight: 400;
+    color: var(--alt-color);
+    opacity: 0;
+    transition: opacity 400ms ease;
+    white-space: nowrap;
+}
+
+#cursor > p > i {
+    color: var(--alt-color);
+}
