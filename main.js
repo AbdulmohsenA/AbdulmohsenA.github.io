@@ -47,7 +47,7 @@ document.querySelector('#app').innerHTML = `
 const projects = [
   ['3D Visualiser', './asset_files/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
   ['WikiProduct', './asset_files/WikiProduct.png', 'https://github.com/WikiProductOfficial/WikiProductOfficial'],
-  ['Faseeh Translator', './asset_files/Baleegh.png', 'https://baleegh-production.up.railway.app/']
+  ['Faseeh Translator', './asset_files/Baleegh.png', 'https://abdulmohsena.github.io/BaleeghGUI/']
 ]
 
 const skills = [
