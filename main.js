@@ -47,7 +47,8 @@ document.querySelector('#app').innerHTML = `
 const projects = [
   ['3D Visualiser', './asset_files/3dVisualiser.png', 'https://abdulmohsena.github.io/Equation3D/'],
   ['WikiProduct', './asset_files/WikiProduct.png', 'https://github.com/WikiProductOfficial/WikiProductOfficial'],
-  ['Faseeh Translator', './asset_files/Baleegh.png', 'https://abdulmohsena.github.io/BaleeghGUI/']
+  ['Faseeh Translator', './asset_files/Baleegh.png', 'https://abdulmohsena.github.io/BaleeghGUI/'],
+  ['LLM Dynamic Steering', './asset_files/joystick.png', 'https://huggingface.co/spaces/Abdulmohsena/dynamic-steering']
 ]
 
 const skills = [
